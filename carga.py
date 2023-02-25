@@ -30,8 +30,8 @@ def eliminar_duplicados(lista_peliculas):
 def leerArchivoEntrada(lista):
     absolutepath = os.path.abspath(__file__)
     Directorio = os.path.dirname(absolutepath) 
-    #ruta = input("Escriba el nombre del archivo: ")
-    ruta_actual = Directorio + "/prueba.lfp"
+    ruta = input("Escriba el nombre del archivo: ")
+    ruta_actual = Directorio + "/"+ruta
     try:
         archivo = open(ruta_actual, 'r+', encoding='utf-8')
         lineas = archivo.readlines()
@@ -42,28 +42,39 @@ def leerArchivoEntrada(lista):
             tmp_autores = None
             tmp_anio = None
             tmp_genero = None
+            listaaux = []
             for j in i:
                 if count == 1:
                     tmp_nombre = j
+                    tmp_nombre = tmp_nombre.strip()
                 elif count == 2:
+                    # quitar espacio antes que entre a una lista
                     j = j.split(",")
-                    tmp_autores = j
+                    for autor in j:
+                        aux = autor.strip()
+                        listaaux.append(aux)
+                    tmp_autores = listaaux
                 elif count == 3:
                     tmp_anio = j
+                    tmp_anio = tmp_anio.strip()
                 elif count == 4:
                     tmp_genero = j
+                    tmp_genero = tmp_genero.strip()
                 count += 1
 
             #peli = Pelicula(tmp_nombre, tmp_autores, tmp_anio, tmp_genero)
             
-            
             lista.append(Pelicula(tmp_nombre, tmp_autores, tmp_anio, tmp_genero))
-            peliculas_sin_duplicados = eliminar_duplicados(lista)
+            if(len(lista) > 0):
+                peliculas_sin_duplicados = eliminar_duplicados(lista)  
+                
+        for pelicula in peliculas_sin_duplicados:
+            print(pelicula.nombre, pelicula.autores, pelicula.anio, pelicula.genero)  
             
             
     except IOError:
         subprocess.call('clear', shell=True)
         print("El archivo no se encuentra en la ruta "+ruta_actual )
     
-    for pelicula in peliculas_sin_duplicados:
-        print(pelicula.nombre, pelicula.autores, pelicula.anio, pelicula.genero)
+    
+    
