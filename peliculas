@@ -1,0 +1,84 @@
+digraph R {
+ rankdir=LR 
+p0[fillcolor=chartreuse, style=filled, shape="record", label="{ Spiderman Homecoming|2017|Accion}"];
+p1[fillcolor=chartreuse, style=filled, shape="record", label="{ Batman y Robin|1997|Accion}"];
+p2[fillcolor=chartreuse, style=filled, shape="record", label="{ Titanic|1997|Romance}"];
+p3[fillcolor=chartreuse, style=filled, shape="record", label="{ The Avengers|2012|Ficcion}"];
+p4[fillcolor=chartreuse, style=filled, shape="record", label="{ Spiderman|2002|Accion}"];
+p5[fillcolor=chartreuse, style=filled, shape="record", label="{ The Amazing Spiderman|2012|Accion}"];
+p6[fillcolor=chartreuse, style=filled, shape="record", label="{ The Amazing Spiderman 2|2014|Accion}"];
+p7[fillcolor=chartreuse, style=filled, shape="record", label="{ Yo antes de ti|2016|Romance}"];
+p8[fillcolor=chartreuse, style=filled, shape="record", label="{ Avengers Infinity War|2018|Acion}"];
+p9[fillcolor=chartreuse, style=filled, shape="record", label="{ Iroman|2008|Accion}"];
+p10[fillcolor=chartreuse, style=filled, shape="record", label="{ Sherlock Holmes|2009|Misterio}"];
+p11[fillcolor=chartreuse, style=filled, shape="record", label="{ Iroman 2|2008|Accion}"];
+p12[fillcolor=chartreuse, style=filled, shape="record", label="{ Iroman 3|2008|Accion}"];
+a0[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Tom Holland "];
+a1[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Zendaya "];
+a2[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Richard J. Holland "];
+a3[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Geoff Hubbard "];
+a4[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Kate Winslet "];
+a5[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Leonardo Dicaprio "];
+a6[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Billy Zane "];
+a7[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Kathy Bates "];
+a8[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Robert Downey Jr "];
+a9[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Chris Evans "];
+a10[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Chris Hemsworth "];
+a11[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Shakira "];
+a12[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Tobey Maguire "];
+a13[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Kirsten Dunst "];
+a14[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Willem Dafoe "];
+a15[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Andrew Garfield "];
+a16[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Emma Stone "];
+a17[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Ricardo Arjona "];
+a18[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Sam Claflin "];
+a19[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Emilia Clarke "];
+a20[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Matthew Lewis "];
+a21[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Jon Favreau "];
+a22[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Gwyneth Paltrow "];
+a23[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Terrence Howard "];
+a24[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Jude Lawa "];
+a25[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Rachel McAdams "];
+a26[color="#000000", fillcolor=pink, style="filled", shape=box, label=" Mark Strong "];
+
+a0-> p0
+a1-> p0
+a2-> p1
+a3-> p1
+a4-> p2
+a5-> p2
+a6-> p2
+a7-> p2
+a8-> p3
+a9-> p3
+a10-> p3
+a11-> p3
+a12-> p4
+a13-> p4
+a14-> p4
+a15-> p5
+a16-> p5
+a17-> p5
+a15-> p6
+a16-> p6
+a18-> p7
+a19-> p7
+a20-> p7
+a8-> p8
+a0-> p8
+a8-> p9
+a21-> p9
+a22-> p9
+a23-> p9
+a8-> p10
+a24-> p10
+a25-> p10
+a26-> p10
+a8-> p11
+a21-> p11
+a22-> p11
+a23-> p11
+a8-> p12
+a21-> p12
+a22-> p12
+a23-> p12}
